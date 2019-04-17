@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Common</key>
+	<dict>
+		<key>hokeyapp_id</key>
+		<string>6868687hh5h5588</string>
+		<key>firbase_id</key>
+		<string>joiji8765445h5750</string>
+	</dict>
+	<key>Production</key>
+	<dict>
+		<key>base_url</key>
+		<string>https://content.guardianapis.com</string>
+		<key>api_key</key>
+		<string>e35a31b0-e2db-4446-8dba-271926bcb741</string>
+	</dict>
+	<key>Development</key>
+	<dict>
+		<key>base_url</key>
+		<string>https://content.guardianapis.com</string>
+		<key>api_key</key>
+		<string>test</string>
+	</dict>
+</dict>
+</plist>

@@ -1,0 +1,15 @@
+//
+//  Release.xcconfig
+//  xcconfig_template
+//
+//  Created by Ara Hakobyan on 17/04/2019.
+//  Copyright © 2019 Ara Hakobyan. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//#include "../Pods/Target Support Files/Pods-NSScreencast-Base-NSScreencast/Pods-NSScreencast-Base-NSScreencast.release.xcconfig"
+#include "Shared.xcconfig"
+
+Environment=Production
