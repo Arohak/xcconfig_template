@@ -1,19 +1,17 @@
-//
-//  Config.swift
-//  xcconfig_template
-//
-//  Created by Ara Hakobyan on 17/04/2019.
-//  Copyright © 2019 Ara Hakobyan. All rights reserved.
-//
+/**
+ * Copyright © 2017 Ara Hakobyan. All rights reserved.
+ */
 
 import Foundation
 
 protocol ConfigProtocol {
     var baseUrl: String { get }
     var apiKey: String { get }
+    var format: String { get }
 }
 
 final class Config {
+
     private let config: NSDictionary
 
     init(dictionary: NSDictionary) {
@@ -27,10 +25,9 @@ final class Config {
 
         let dict = NSMutableDictionary()
         if let commonConfig = config["Common"] as? [AnyHashable: Any] {
-
             dict.addEntries(from: commonConfig)
-
         }
+        
         if let environment = bundle.infoDictionary!["Environment"] as? String {
             if let environmentConfig = config[environment] as? [AnyHashable: Any] {
                 dict.addEntries(from: environmentConfig)
@@ -42,12 +39,15 @@ final class Config {
 }
 
 extension Config: ConfigProtocol {
-
     var baseUrl: String {
         return config["base_url"] as! String
     }
 
     var apiKey: String {
         return config["api_key"] as! String
+    }
+
+    var format: String {
+        return config["format"] as! String
     }
 }

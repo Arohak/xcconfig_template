@@ -1,10 +1,6 @@
-//
-//  NewsFeed.swift
-//  AHProvider_Example
-//
-//  Created by Ara Hakobyan on 30/01/2018.
-//  Copyright © 2018 CocoaPods. All rights reserved.
-//
+/**
+ * Copyright © 2017 Ara Hakobyan. All rights reserved.
+ */
 
 import Foundation
 

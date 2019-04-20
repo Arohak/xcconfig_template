@@ -13,11 +13,10 @@
 		521866F92267AF7B002DCB40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521866F72267AF7B002DCB40 /* LaunchScreen.storyboard */; };
 		521867082267B8D9002DCB40 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 521867072267B8D9002DCB40 /* config.plist */; };
 		5218670B2267B9CE002DCB40 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218670A2267B9CE002DCB40 /* Config.swift */; };
-		521867122267BFDD002DCB40 /* GuardianaEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218670E2267BFDD002DCB40 /* GuardianaEndpoint.swift */; };
+		521867122267BFDD002DCB40 /* Guardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218670E2267BFDD002DCB40 /* Guardian.swift */; };
 		521867132267BFDD002DCB40 /* AHProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867102267BFDD002DCB40 /* AHProvider.swift */; };
 		521867142267BFDD002DCB40 /* AHRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867112267BFDD002DCB40 /* AHRequest.swift */; };
 		5218671A2267C0BF002DCB40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867162267C0BF002DCB40 /* ViewController.swift */; };
-		5218671B2267C0BF002DCB40 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867182267C0BF002DCB40 /* User.swift */; };
 		5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867192267C0BF002DCB40 /* NewsFeed.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,11 +33,10 @@
 		521867042267B12E002DCB40 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		521867072267B8D9002DCB40 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
 		5218670A2267B9CE002DCB40 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		5218670E2267BFDD002DCB40 /* GuardianaEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardianaEndpoint.swift; sourceTree = "<group>"; };
+		5218670E2267BFDD002DCB40 /* Guardian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guardian.swift; sourceTree = "<group>"; };
 		521867102267BFDD002DCB40 /* AHProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHProvider.swift; sourceTree = "<group>"; };
 		521867112267BFDD002DCB40 /* AHRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AHRequest.swift; sourceTree = "<group>"; };
 		521867162267C0BF002DCB40 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		521867182267C0BF002DCB40 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		521867192267C0BF002DCB40 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +112,7 @@
 		5218670D2267BFDD002DCB40 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				5218670E2267BFDD002DCB40 /* GuardianaEndpoint.swift */,
+				5218670E2267BFDD002DCB40 /* Guardian.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -139,7 +137,6 @@
 		521867172267C0BF002DCB40 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				521867182267C0BF002DCB40 /* User.swift */,
 				521867192267C0BF002DCB40 /* NewsFeed.swift */,
 			);
 			path = Models;
@@ -235,8 +232,7 @@
 				521867132267BFDD002DCB40 /* AHProvider.swift in Sources */,
 				521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */,
 				5218670B2267B9CE002DCB40 /* Config.swift in Sources */,
-				521867122267BFDD002DCB40 /* GuardianaEndpoint.swift in Sources */,
-				5218671B2267C0BF002DCB40 /* User.swift in Sources */,
+				521867122267BFDD002DCB40 /* Guardian.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

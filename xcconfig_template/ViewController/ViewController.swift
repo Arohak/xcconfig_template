@@ -9,8 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    let provider = AHProvider<GuardianaEndpoint>()
+    let config = Config()
+    let provider = AHProvider<Guardian>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
 
     func useGuardian() {
-        provider.requestDecodable(.guardian(pageSize: "2")) { (response: Result<NewsFeed, AHError>) in
+        provider.requestDecodable(.searchFeed(config, "2")) { (response: Result<NewsFeed, AHError>) in
             switch response {
             case .failure(let error):
                 print(error)

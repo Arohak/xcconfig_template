@@ -1,49 +1,49 @@
+/**
+ * Copyright © 2017 Ara Hakobyan. All rights reserved.
+ */
 
 import Foundation
 
-let config = Config()
-
-enum GuardianaEndpoint {
-    case guardian(pageSize: String)
+enum Guardian {
+    case searchFeed(_ config: ConfigProtocol, _ size: String)
 }
 
-extension GuardianaEndpoint: AHRequest {
-
+extension Guardian: AHRequest {
     var method: AHHttpMethod {
         switch self {
-        case .guardian:
+        case .searchFeed(let config, _):
             print(config.baseUrl)
             print(config.apiKey)
             print()
             return .get
         }
     }
-    
+
     var baseURL: URL {
         switch self {
-        case .guardian:
+        case .searchFeed(let config, _):
             let url = URL(string: config.baseUrl)!
             return url
         }
     }
-    
+
     var path: String {
         switch self {
-        case .guardian:
+        case .searchFeed:
             return "search"
         }
     }
 
     var params: [String : String]? {
         switch self {
-        case .guardian(let pageSize):
-            return ["format": "json", "page-size": pageSize]
+        case .searchFeed(let config, let size):
+            return ["format": config.format, "page-size": size]
         }
     }
-    
+
     var headers: [String : String]? {
         switch self {
-        case .guardian:
+        case .searchFeed(let config, _):
             let key = ["api-key" : config.apiKey]
             return key
         }
