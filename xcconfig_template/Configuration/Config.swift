@@ -11,7 +11,6 @@ protocol ConfigProtocol {
 }
 
 final class Config {
-
     private let config: NSDictionary
 
     init(dictionary: NSDictionary) {

@@ -1,0 +1,22 @@
+PODS:
+  - AHProvider (0.2.0)
+
+DEPENDENCIES:
+  - AHProvider (from `https://github.com/Arohak/AHProvider.git`, branch `dev`)
+
+EXTERNAL SOURCES:
+  AHProvider:
+    :branch: dev
+    :git: https://github.com/Arohak/AHProvider.git
+
+CHECKOUT OPTIONS:
+  AHProvider:
+    :commit: ef95e93e612eedca8a6ce0371dc857e7830a4c48
+    :git: https://github.com/Arohak/AHProvider.git
+
+SPEC CHECKSUMS:
+  AHProvider: 462d136932ee305fe1ff116dfd876113292cffd1
+
+PODFILE CHECKSUM: ee0124d9fd9d3c283ccf9f65b0fac8e0105c3f02
+
+COCOAPODS: 1.5.3

@@ -10,5 +10,6 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 #include "Shared.xcconfig"
+#include "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.debug.xcconfig"
 
 Environment=Debug

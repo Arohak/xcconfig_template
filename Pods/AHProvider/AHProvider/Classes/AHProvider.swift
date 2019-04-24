@@ -2,7 +2,7 @@
  * Copyright © 2017 Ara Hakobyan. All rights reserved.
  */
 
-import UIKit
+import Foundation
 
 public typealias Dict = [String: Any]
 

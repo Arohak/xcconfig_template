@@ -1,0 +1,6 @@
+framework module AHProvider {
+  umbrella header "AHProvider-umbrella.h"
+
+  export *
+  module * { export * }
+}

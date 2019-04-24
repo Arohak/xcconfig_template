@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AHProvider
 
 class ViewController: UIViewController {
     let config = Config()
