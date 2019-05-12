@@ -17,6 +17,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        //MARK: - Sample Generic
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window!.rootViewController = GenericViewController()
+        self.window!.makeKeyAndVisible()
+        //MARK: -
+
+        //MARK: - Eventable
+//        var vc = EventableViewController()
+//        vc.on(eventType: .viewDidLoad) { _ in
+//            print("viewDidLoad")
+//        }
+//        vc.on(eventType: .viewDidAppear) { _ in
+//            print("viewDidAppear")
+//        }
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+//        self.window!.rootViewController = vc
+//        self.window!.makeKeyAndVisible()
+        //MARK: -
+
         return true
     }
 

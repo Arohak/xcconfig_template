@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		520F80A32275F35E00526A13 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520F80A22275F35E00526A13 /* BaseView.swift */; };
 		521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521866EE2267AF78002DCB40 /* AppDelegate.swift */; };
 		521866F42267AF78002DCB40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521866F22267AF78002DCB40 /* Main.storyboard */; };
 		521866F62267AF7B002DCB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521866F52267AF7B002DCB40 /* Assets.xcassets */; };
@@ -17,16 +16,18 @@
 		521867122267BFDD002DCB40 /* Guardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218670E2267BFDD002DCB40 /* Guardian.swift */; };
 		5218671A2267C0BF002DCB40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867162267C0BF002DCB40 /* ViewController.swift */; };
 		5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867192267C0BF002DCB40 /* NewsFeed.swift */; };
+		521FDF8F22880F92000F277A /* EventableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FDF8E22880F92000F277A /* EventableViewController.swift */; };
+		521FDF912288100A000F277A /* Eventable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FDF902288100A000F277A /* Eventable.swift */; };
+		521FDF93228813DB000F277A /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FDF92228813DB000F277A /* GenericViewController.swift */; };
 		5221155C22762F8E003E147B /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221155B22762F8E003E147B /* BaseTableViewController.swift */; };
 		5221155E22762FE9003E147B /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221155D22762FE9003E147B /* BaseTableViewCell.swift */; };
-		52211560227630B7003E147B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221155F227630B7003E147B /* Model.swift */; };
+		52211560227630B7003E147B /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221155F227630B7003E147B /* ModelProtocol.swift */; };
 		5221156222763161003E147B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221156122763161003E147B /* Extensions.swift */; };
 		E363F3C8CC1D95659D6EF2D6 /* Pods_xcconfig_template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xcconfig_template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		520F80A22275F35E00526A13 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		521866EB2267AF78002DCB40 /* xcconfig_template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcconfig_template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521866EE2267AF78002DCB40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		521866F32267AF78002DCB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,9 +43,12 @@
 		5218670E2267BFDD002DCB40 /* Guardian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guardian.swift; sourceTree = "<group>"; };
 		521867162267C0BF002DCB40 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		521867192267C0BF002DCB40 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
+		521FDF8E22880F92000F277A /* EventableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventableViewController.swift; sourceTree = "<group>"; };
+		521FDF902288100A000F277A /* Eventable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eventable.swift; sourceTree = "<group>"; };
+		521FDF92228813DB000F277A /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
 		5221155B22762F8E003E147B /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		5221155D22762FE9003E147B /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		5221155F227630B7003E147B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		5221155F227630B7003E147B /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
 		5221156122763161003E147B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +89,6 @@
 				521867152267C0BF002DCB40 /* ViewController */,
 				5218670C2267BFDD002DCB40 /* Common */,
 				521867172267C0BF002DCB40 /* Models */,
-				5221155A22762F67003E147B /* Generic */,
 				521867002267AFEE002DCB40 /* Configuration */,
 			);
 			path = xcconfig_template;
@@ -115,6 +118,8 @@
 		5218670C2267BFDD002DCB40 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				521FDF8D22880F6A000F277A /* Eventable */,
+				5221155A22762F67003E147B /* Generic */,
 				5218670D2267BFDD002DCB40 /* Endpoints */,
 			);
 			path = Common;
@@ -132,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				521867162267C0BF002DCB40 /* ViewController.swift */,
+				521FDF8E22880F92000F277A /* EventableViewController.swift */,
+				521FDF92228813DB000F277A /* GenericViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -156,13 +163,20 @@
 			name = Main;
 			sourceTree = "<group>";
 		};
+		521FDF8D22880F6A000F277A /* Eventable */ = {
+			isa = PBXGroup;
+			children = (
+				521FDF902288100A000F277A /* Eventable.swift */,
+			);
+			path = Eventable;
+			sourceTree = "<group>";
+		};
 		5221155A22762F67003E147B /* Generic */ = {
 			isa = PBXGroup;
 			children = (
 				5221155B22762F8E003E147B /* BaseTableViewController.swift */,
 				5221155D22762FE9003E147B /* BaseTableViewCell.swift */,
-				520F80A22275F35E00526A13 /* BaseView.swift */,
-				5221155F227630B7003E147B /* Model.swift */,
+				5221155F227630B7003E147B /* ModelProtocol.swift */,
 				5221156122763161003E147B /* Extensions.swift */,
 			);
 			path = Generic;
@@ -304,14 +318,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52211560227630B7003E147B /* Model.swift in Sources */,
+				52211560227630B7003E147B /* ModelProtocol.swift in Sources */,
 				5221155E22762FE9003E147B /* BaseTableViewCell.swift in Sources */,
-				520F80A32275F35E00526A13 /* BaseView.swift in Sources */,
 				5221155C22762F8E003E147B /* BaseTableViewController.swift in Sources */,
+				521FDF912288100A000F277A /* Eventable.swift in Sources */,
 				5221156222763161003E147B /* Extensions.swift in Sources */,
 				5218671A2267C0BF002DCB40 /* ViewController.swift in Sources */,
+				521FDF93228813DB000F277A /* GenericViewController.swift in Sources */,
 				5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */,
 				521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */,
+				521FDF8F22880F92000F277A /* EventableViewController.swift in Sources */,
 				5218670B2267B9CE002DCB40 /* Config.swift in Sources */,
 				521867122267BFDD002DCB40 /* Guardian.swift in Sources */,
 			);

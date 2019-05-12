@@ -8,17 +8,6 @@
 
 import UIKit
 
-class SimpleTableViewController: BaseTableViewController<MyCell, MyModel> {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        models = [
-            MyModel(title: "0"),
-            MyModel(title: "1")
-        ]
-    }
-}
-
 class BaseTableViewController<Cell: BaseTableViewCell<Model>, Model>: UITableViewController {
     var models = [Model]()
 

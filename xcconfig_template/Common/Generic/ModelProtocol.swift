@@ -1,5 +1,5 @@
 //
-//  BaseTableViewCell.swift
+//  Model.swift
 //  xcconfig_template
 //
 //  Created by Ara Hakobyan on 28/04/2019.
@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+protocol ModelProtocol {
+    var title: String { get }
+}
