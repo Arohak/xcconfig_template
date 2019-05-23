@@ -10,7 +10,6 @@ import UIKit
 import AHProvider
 
 class ViewController: UIViewController {
-    let config = Config()
     let provider = AHProvider<Guardian>()
 
     override func viewDidLoad() {
@@ -20,7 +19,7 @@ class ViewController: UIViewController {
     }
 
     func useGuardian() {
-        provider.requestDecodable(.searchFeed(config, "2")) { (response: Result<NewsFeed, AHError>) in
+        provider.requestDecodable(.searchFeed("2")) { (response: Result<NewsFeed, AHError>) in
             switch response {
             case .failure(let error):
                 print(error)

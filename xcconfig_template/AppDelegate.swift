@@ -19,9 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         //MARK: - Sample Generic
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window!.rootViewController = GenericViewController()
-        self.window!.makeKeyAndVisible()
+//        self.window = UIWindow(frame: UIScreen.main.bounds)
+//        self.window!.rootViewController = GenericViewController()
+//        self.window!.makeKeyAndVisible()
         //MARK: -
 
         //MARK: - Eventable

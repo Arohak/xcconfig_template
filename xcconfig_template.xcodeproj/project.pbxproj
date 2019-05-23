@@ -11,8 +11,8 @@
 		521866F42267AF78002DCB40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521866F22267AF78002DCB40 /* Main.storyboard */; };
 		521866F62267AF7B002DCB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521866F52267AF7B002DCB40 /* Assets.xcassets */; };
 		521866F92267AF7B002DCB40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521866F72267AF7B002DCB40 /* LaunchScreen.storyboard */; };
-		521867082267B8D9002DCB40 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 521867072267B8D9002DCB40 /* config.plist */; };
-		5218670B2267B9CE002DCB40 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218670A2267B9CE002DCB40 /* Config.swift */; };
+		521867082267B8D9002DCB40 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 521867072267B8D9002DCB40 /* Configuration.plist */; };
+		5218670B2267B9CE002DCB40 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218670A2267B9CE002DCB40 /* Configuration.swift */; };
 		521867122267BFDD002DCB40 /* Guardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218670E2267BFDD002DCB40 /* Guardian.swift */; };
 		5218671A2267C0BF002DCB40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867162267C0BF002DCB40 /* ViewController.swift */; };
 		5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867192267C0BF002DCB40 /* NewsFeed.swift */; };
@@ -38,8 +38,8 @@
 		521867022267B0DC002DCB40 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		521867032267B0F3002DCB40 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		521867042267B12E002DCB40 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
-		521867072267B8D9002DCB40 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
-		5218670A2267B9CE002DCB40 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		521867072267B8D9002DCB40 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		5218670A2267B9CE002DCB40 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		5218670E2267BFDD002DCB40 /* Guardian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guardian.swift; sourceTree = "<group>"; };
 		521867162267C0BF002DCB40 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		521867192267C0BF002DCB40 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				521867092267B992002DCB40 /* xcconfig */,
-				521867072267B8D9002DCB40 /* config.plist */,
-				5218670A2267B9CE002DCB40 /* Config.swift */,
+				521867072267B8D9002DCB40 /* Configuration.plist */,
+				5218670A2267B9CE002DCB40 /* Configuration.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -257,7 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				521867082267B8D9002DCB40 /* config.plist in Resources */,
+				521867082267B8D9002DCB40 /* Configuration.plist in Resources */,
 				521866F92267AF7B002DCB40 /* LaunchScreen.storyboard in Resources */,
 				521866F62267AF7B002DCB40 /* Assets.xcassets in Resources */,
 				521866F42267AF78002DCB40 /* Main.storyboard in Resources */,
@@ -328,7 +328,7 @@
 				5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */,
 				521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */,
 				521FDF8F22880F92000F277A /* EventableViewController.swift in Sources */,
-				5218670B2267B9CE002DCB40 /* Config.swift in Sources */,
+				5218670B2267B9CE002DCB40 /* Configuration.swift in Sources */,
 				521867122267BFDD002DCB40 /* Guardian.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
