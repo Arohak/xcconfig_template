@@ -16,11 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
 
-        //MARK: - Sample Generic
+        //MARK: - Staic Table View Enum
+                self.window = UIWindow(frame: UIScreen.main.bounds)
+                self.window!.rootViewController = StaticTableViewController()
+                self.window!.makeKeyAndVisible()
+        //MARK: -
+
+        //MARK: - Dynamic Table View Generic
 //        self.window = UIWindow(frame: UIScreen.main.bounds)
-//        self.window!.rootViewController = GenericViewController()
+//        self.window!.rootViewController = DynamicTableViewController()
 //        self.window!.makeKeyAndVisible()
         //MARK: -
 

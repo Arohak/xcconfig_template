@@ -1,31 +1,20 @@
 //
-//  GenericViewController.swift
+//  BaseTableViewCell.swift
 //  xcconfig_template
 //
-//  Created by Ara Hakobyan on 12/05/2019.
+//  Created by Ara Hakobyan on 28/04/2019.
 //  Copyright © 2019 Ara Hakobyan. All rights reserved.
 //
 
 import UIKit
 
-class GenericViewController: BaseTableViewController<MyCell, MyModel> {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        models = [
-            MyModel(title: "0"),
-            MyModel(title: "1")
-        ]
-    }
-}
-
-//MARK: - MyModel
-struct MyModel: ModelProtocol {
-    let title: String
+class BaseTableViewCell<Model: DynamicModelType>: UITableViewCell {
+    var model: Model!
 }
 
 //MARK: - MyCell
-class MyCell: BaseTableViewCell<MyModel> {
+class MyCell: BaseTableViewCell<DynamicModel> {
+    typealias Model = DynamicModel
     private lazy var view: View = {
         let view = View  ()
         contentView.addSubview(view)
@@ -36,7 +25,7 @@ class MyCell: BaseTableViewCell<MyModel> {
         return view
     }()
 
-    override var model: MyModel! {
+    override var model: Model! {
         didSet {
             view.config(model)
         }
@@ -68,7 +57,7 @@ extension MyCell {
             fatalError("init(coder:) has not been implemented")
         }
 
-        func config(_ model: MyModel) {
+        func config(_ model: Model) {
             titleLabel.text = model.title
         }
     }

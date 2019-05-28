@@ -13,7 +13,6 @@ class BaseTableViewController<Cell: BaseTableViewCell<Model>, Model>: UITableVie
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.registerCell(Cell.self)
     }
 

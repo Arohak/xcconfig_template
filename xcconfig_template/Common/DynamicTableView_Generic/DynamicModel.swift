@@ -8,6 +8,10 @@
 
 import Foundation
 
-protocol ModelProtocol {
+protocol DynamicModelType {
     var title: String { get }
+}
+
+struct DynamicModel: DynamicModelType {
+    let title: String
 }

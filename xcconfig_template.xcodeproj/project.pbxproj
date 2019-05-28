@@ -18,11 +18,15 @@
 		5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867192267C0BF002DCB40 /* NewsFeed.swift */; };
 		521FDF8F22880F92000F277A /* EventableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FDF8E22880F92000F277A /* EventableViewController.swift */; };
 		521FDF912288100A000F277A /* Eventable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FDF902288100A000F277A /* Eventable.swift */; };
-		521FDF93228813DB000F277A /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FDF92228813DB000F277A /* GenericViewController.swift */; };
+		521FDF93228813DB000F277A /* DynamicTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FDF92228813DB000F277A /* DynamicTableViewController.swift */; };
 		5221155C22762F8E003E147B /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221155B22762F8E003E147B /* BaseTableViewController.swift */; };
 		5221155E22762FE9003E147B /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221155D22762FE9003E147B /* BaseTableViewCell.swift */; };
-		52211560227630B7003E147B /* ModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221155F227630B7003E147B /* ModelProtocol.swift */; };
-		5221156222763161003E147B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221156122763161003E147B /* Extensions.swift */; };
+		52211560227630B7003E147B /* DynamicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221155F227630B7003E147B /* DynamicModel.swift */; };
+		523ACD85229D33980082946D /* StaticTableDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD84229D33980082946D /* StaticTableDataProvider.swift */; };
+		523ACD87229D3E510082946D /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD86229D3E500082946D /* StaticTableViewController.swift */; };
+		523ACD89229DA3570082946D /* StaticTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD88229DA3570082946D /* StaticTableCell.swift */; };
+		523ACD8D229DA65D0082946D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD8C229DA65D0082946D /* Extensions.swift */; };
+		523ACD8F229DA70B0082946D /* StaticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD8E229DA70B0082946D /* StaticModel.swift */; };
 		E363F3C8CC1D95659D6EF2D6 /* Pods_xcconfig_template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,11 +49,15 @@
 		521867192267C0BF002DCB40 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 		521FDF8E22880F92000F277A /* EventableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventableViewController.swift; sourceTree = "<group>"; };
 		521FDF902288100A000F277A /* Eventable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eventable.swift; sourceTree = "<group>"; };
-		521FDF92228813DB000F277A /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		521FDF92228813DB000F277A /* DynamicTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableViewController.swift; sourceTree = "<group>"; };
 		5221155B22762F8E003E147B /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		5221155D22762FE9003E147B /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
-		5221155F227630B7003E147B /* ModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelProtocol.swift; sourceTree = "<group>"; };
-		5221156122763161003E147B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5221155F227630B7003E147B /* DynamicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicModel.swift; sourceTree = "<group>"; };
+		523ACD84229D33980082946D /* StaticTableDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticTableDataProvider.swift; sourceTree = "<group>"; };
+		523ACD86229D3E500082946D /* StaticTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticTableViewController.swift; sourceTree = "<group>"; };
+		523ACD88229DA3570082946D /* StaticTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTableCell.swift; sourceTree = "<group>"; };
+		523ACD8C229DA65D0082946D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		523ACD8E229DA70B0082946D /* StaticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,9 +126,11 @@
 		5218670C2267BFDD002DCB40 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				523ACD83229D31B30082946D /* StaticTableView_Enum */,
+				5221155A22762F67003E147B /* DynamicTableView_Generic */,
 				521FDF8D22880F6A000F277A /* Eventable */,
-				5221155A22762F67003E147B /* Generic */,
 				5218670D2267BFDD002DCB40 /* Endpoints */,
+				523ACD8B229DA65D0082946D /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -138,7 +148,8 @@
 			children = (
 				521867162267C0BF002DCB40 /* ViewController.swift */,
 				521FDF8E22880F92000F277A /* EventableViewController.swift */,
-				521FDF92228813DB000F277A /* GenericViewController.swift */,
+				521FDF92228813DB000F277A /* DynamicTableViewController.swift */,
+				523ACD86229D3E500082946D /* StaticTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -171,15 +182,32 @@
 			path = Eventable;
 			sourceTree = "<group>";
 		};
-		5221155A22762F67003E147B /* Generic */ = {
+		5221155A22762F67003E147B /* DynamicTableView_Generic */ = {
 			isa = PBXGroup;
 			children = (
 				5221155B22762F8E003E147B /* BaseTableViewController.swift */,
 				5221155D22762FE9003E147B /* BaseTableViewCell.swift */,
-				5221155F227630B7003E147B /* ModelProtocol.swift */,
-				5221156122763161003E147B /* Extensions.swift */,
+				5221155F227630B7003E147B /* DynamicModel.swift */,
 			);
-			path = Generic;
+			path = DynamicTableView_Generic;
+			sourceTree = "<group>";
+		};
+		523ACD83229D31B30082946D /* StaticTableView_Enum */ = {
+			isa = PBXGroup;
+			children = (
+				523ACD84229D33980082946D /* StaticTableDataProvider.swift */,
+				523ACD88229DA3570082946D /* StaticTableCell.swift */,
+				523ACD8E229DA70B0082946D /* StaticModel.swift */,
+			);
+			path = StaticTableView_Enum;
+			sourceTree = "<group>";
+		};
+		523ACD8B229DA65D0082946D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				523ACD8C229DA65D0082946D /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		94EF026CD103FF1FD67900E3 /* Frameworks */ = {
@@ -318,14 +346,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52211560227630B7003E147B /* ModelProtocol.swift in Sources */,
+				52211560227630B7003E147B /* DynamicModel.swift in Sources */,
 				5221155E22762FE9003E147B /* BaseTableViewCell.swift in Sources */,
 				5221155C22762F8E003E147B /* BaseTableViewController.swift in Sources */,
 				521FDF912288100A000F277A /* Eventable.swift in Sources */,
-				5221156222763161003E147B /* Extensions.swift in Sources */,
+				523ACD85229D33980082946D /* StaticTableDataProvider.swift in Sources */,
+				523ACD8F229DA70B0082946D /* StaticModel.swift in Sources */,
 				5218671A2267C0BF002DCB40 /* ViewController.swift in Sources */,
-				521FDF93228813DB000F277A /* GenericViewController.swift in Sources */,
+				523ACD87229D3E510082946D /* StaticTableViewController.swift in Sources */,
+				523ACD89229DA3570082946D /* StaticTableCell.swift in Sources */,
+				521FDF93228813DB000F277A /* DynamicTableViewController.swift in Sources */,
 				5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */,
+				523ACD8D229DA65D0082946D /* Extensions.swift in Sources */,
 				521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */,
 				521FDF8F22880F92000F277A /* EventableViewController.swift in Sources */,
 				5218670B2267B9CE002DCB40 /* Configuration.swift in Sources */,
