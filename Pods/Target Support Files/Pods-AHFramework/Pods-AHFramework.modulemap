@@ -1,0 +1,6 @@
+framework module Pods_AHFramework {
+  umbrella header "Pods-AHFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

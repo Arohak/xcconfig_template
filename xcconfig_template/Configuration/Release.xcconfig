@@ -9,7 +9,8 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-#include "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.release.xcconfig"
 #include "Shared.xcconfig"
+#include "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.release.xcconfig"
+#include "Pods/Target Support Files/Pods-AHFramework/Pods-AHFramework.release.xcconfig"
 
 Environment=Production

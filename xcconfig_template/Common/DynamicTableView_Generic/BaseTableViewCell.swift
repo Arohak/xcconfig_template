@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BaseTableViewCell<Model: DynamicModelType>: UITableViewCell {
+public class BaseTableViewCell<Model: DynamicModelType>: UITableViewCell {
     var model: Model!
 }
 

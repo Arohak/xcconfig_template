@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StaticTableViewController: UIViewController {
+public class StaticTableViewController: UIViewController {
     private var user = UserProfile()
     private var tableDataProvider: StaticTableDataProvider?
     lazy var tableView: UITableView = {
@@ -17,7 +17,7 @@ class StaticTableViewController: UIViewController {
         return view
     }()
 
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.view = tableView
         tableDataProvider = StaticTableDataProvider(with: user, table: tableView)

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol DynamicModelType {
+public protocol DynamicModelType {
     var title: String { get }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01E54F2539D2A9E4B53FEAAD /* Pods_AHFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB3944B52B14616BB4DCA67 /* Pods_AHFramework.framework */; };
 		521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521866EE2267AF78002DCB40 /* AppDelegate.swift */; };
 		521866F42267AF78002DCB40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521866F22267AF78002DCB40 /* Main.storyboard */; };
 		521866F62267AF7B002DCB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521866F52267AF7B002DCB40 /* Assets.xcassets */; };
@@ -27,10 +28,44 @@
 		523ACD89229DA3570082946D /* StaticTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD88229DA3570082946D /* StaticTableCell.swift */; };
 		523ACD8D229DA65D0082946D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD8C229DA65D0082946D /* Extensions.swift */; };
 		523ACD8F229DA70B0082946D /* StaticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD8E229DA70B0082946D /* StaticModel.swift */; };
+		523ACD99229DB1470082946D /* AHFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 523ACD97229DB1470082946D /* AHFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		523ACD9C229DB1470082946D /* AHFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 523ACD95229DB1470082946D /* AHFramework.framework */; };
+		523ACD9D229DB1470082946D /* AHFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 523ACD95229DB1470082946D /* AHFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		523ACDA3229DB2310082946D /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD86229D3E500082946D /* StaticTableViewController.swift */; };
+		523ACDA4229DB2850082946D /* StaticTableDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD84229D33980082946D /* StaticTableDataProvider.swift */; };
+		523ACDA5229DB2850082946D /* StaticTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD88229DA3570082946D /* StaticTableCell.swift */; };
+		523ACDA6229DB2850082946D /* StaticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD8E229DA70B0082946D /* StaticModel.swift */; };
+		523ACDA7229DB2A40082946D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD8C229DA65D0082946D /* Extensions.swift */; };
 		E363F3C8CC1D95659D6EF2D6 /* Pods_xcconfig_template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		523ACD9A229DB1470082946D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 521866E32267AF78002DCB40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 523ACD94229DB1470082946D;
+			remoteInfo = AHFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		523ACDA2229DB1470082946D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				523ACD9D229DB1470082946D /* AHFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0BB3944B52B14616BB4DCA67 /* Pods_AHFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3503E2AF705A21AE66F78367 /* Pods-AHFramework.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFramework.development.xcconfig"; path = "Pods/Target Support Files/Pods-AHFramework/Pods-AHFramework.development.xcconfig"; sourceTree = "<group>"; };
 		42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xcconfig_template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		521866EB2267AF78002DCB40 /* xcconfig_template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcconfig_template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521866EE2267AF78002DCB40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +93,11 @@
 		523ACD88229DA3570082946D /* StaticTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticTableCell.swift; sourceTree = "<group>"; };
 		523ACD8C229DA65D0082946D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		523ACD8E229DA70B0082946D /* StaticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticModel.swift; sourceTree = "<group>"; };
+		523ACD95229DB1470082946D /* AHFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		523ACD97229DB1470082946D /* AHFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHFramework.h; sourceTree = "<group>"; };
+		523ACD98229DB1470082946D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7832CB9FF6FEF738F9C85D4 /* Pods-AHFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHFramework/Pods-AHFramework.release.xcconfig"; sourceTree = "<group>"; };
+		DDDDB052C0EEB24131909969 /* Pods-AHFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHFramework/Pods-AHFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +105,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523ACD9C229DB1470082946D /* AHFramework.framework in Frameworks */,
 				E363F3C8CC1D95659D6EF2D6 /* Pods_xcconfig_template.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523ACD92229DB1470082946D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01E54F2539D2A9E4B53FEAAD /* Pods_AHFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				521866ED2267AF78002DCB40 /* xcconfig_template */,
+				523ACD96229DB1470082946D /* AHFramework */,
 				521866EC2267AF78002DCB40 /* Products */,
 				A4520C4BC33361331923949C /* Pods */,
 				94EF026CD103FF1FD67900E3 /* Frameworks */,
@@ -86,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				521866EB2267AF78002DCB40 /* xcconfig_template.app */,
+				523ACD95229DB1470082946D /* AHFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -210,10 +261,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		523ACD96229DB1470082946D /* AHFramework */ = {
+			isa = PBXGroup;
+			children = (
+				523ACD97229DB1470082946D /* AHFramework.h */,
+				523ACD98229DB1470082946D /* Info.plist */,
+			);
+			path = AHFramework;
+			sourceTree = "<group>";
+		};
 		94EF026CD103FF1FD67900E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */,
+				0BB3944B52B14616BB4DCA67 /* Pods_AHFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -221,11 +282,25 @@
 		A4520C4BC33361331923949C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				DDDDB052C0EEB24131909969 /* Pods-AHFramework.debug.xcconfig */,
+				3503E2AF705A21AE66F78367 /* Pods-AHFramework.development.xcconfig */,
+				D7832CB9FF6FEF738F9C85D4 /* Pods-AHFramework.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		523ACD90229DB1470082946D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523ACD99229DB1470082946D /* AHFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		521866EA2267AF78002DCB40 /* xcconfig_template */ = {
@@ -237,15 +312,36 @@
 				521866E82267AF78002DCB40 /* Frameworks */,
 				521866E92267AF78002DCB40 /* Resources */,
 				D6700614C572F644479D6ACB /* [CP] Embed Pods Frameworks */,
+				523ACDA2229DB1470082946D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				523ACD9B229DB1470082946D /* PBXTargetDependency */,
 			);
 			name = xcconfig_template;
 			productName = xcconfig_template;
 			productReference = 521866EB2267AF78002DCB40 /* xcconfig_template.app */;
 			productType = "com.apple.product-type.application";
+		};
+		523ACD94229DB1470082946D /* AHFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 523ACD9E229DB1470082946D /* Build configuration list for PBXNativeTarget "AHFramework" */;
+			buildPhases = (
+				68BFC1AB07A94089CBE03B09 /* [CP] Check Pods Manifest.lock */,
+				523ACD90229DB1470082946D /* Headers */,
+				523ACD91229DB1470082946D /* Sources */,
+				523ACD92229DB1470082946D /* Frameworks */,
+				523ACD93229DB1470082946D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHFramework;
+			productName = AHFramework;
+			productReference = 523ACD95229DB1470082946D /* AHFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -259,6 +355,9 @@
 				TargetAttributes = {
 					521866EA2267AF78002DCB40 = {
 						CreatedOnToolsVersion = 10.2;
+					};
+					523ACD94229DB1470082946D = {
+						CreatedOnToolsVersion = 10.2.1;
 					};
 				};
 			};
@@ -276,6 +375,7 @@
 			projectRoot = "";
 			targets = (
 				521866EA2267AF78002DCB40 /* xcconfig_template */,
+				523ACD94229DB1470082946D /* AHFramework */,
 			);
 		};
 /* End PBXProject section */
@@ -289,6 +389,13 @@
 				521866F92267AF7B002DCB40 /* LaunchScreen.storyboard in Resources */,
 				521866F62267AF7B002DCB40 /* Assets.xcassets in Resources */,
 				521866F42267AF78002DCB40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523ACD93229DB1470082946D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +418,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-xcconfig_template-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68BFC1AB07A94089CBE03B09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AHFramework-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -365,7 +494,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		523ACD91229DB1470082946D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523ACDA7229DB2A40082946D /* Extensions.swift in Sources */,
+				523ACDA3229DB2310082946D /* StaticTableViewController.swift in Sources */,
+				523ACDA6229DB2850082946D /* StaticModel.swift in Sources */,
+				523ACDA4229DB2850082946D /* StaticTableDataProvider.swift in Sources */,
+				523ACDA5229DB2850082946D /* StaticTableCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		523ACD9B229DB1470082946D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 523ACD94229DB1470082946D /* AHFramework */;
+			targetProxy = 523ACD9A229DB1470082946D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		521866F22267AF78002DCB40 /* Main.storyboard */ = {
@@ -507,6 +656,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 521867022267B0DC002DCB40 /* Debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK8C7HUHMZ;
@@ -526,6 +676,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 521867032267B0F3002DCB40 /* Release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK8C7HUHMZ;
@@ -606,6 +757,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 521867042267B12E002DCB40 /* Development.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK8C7HUHMZ;
@@ -620,6 +772,96 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Development;
+		};
+		523ACD9F229DB1470082946D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDDDB052C0EEB24131909969 /* Pods-AHFramework.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WK8C7HUHMZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AHFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.arohak.AHFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		523ACDA0229DB1470082946D /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3503E2AF705A21AE66F78367 /* Pods-AHFramework.development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WK8C7HUHMZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AHFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.arohak.AHFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		523ACDA1229DB1470082946D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7832CB9FF6FEF738F9C85D4 /* Pods-AHFramework.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = WK8C7HUHMZ;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AHFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.arohak.AHFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -640,6 +882,16 @@
 				521866FE2267AF7B002DCB40 /* Debug */,
 				521867062267B142002DCB40 /* Development */,
 				521866FF2267AF7B002DCB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		523ACD9E229DB1470082946D /* Build configuration list for PBXNativeTarget "AHFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523ACD9F229DB1470082946D /* Debug */,
+				523ACDA0229DB1470082946D /* Development */,
+				523ACDA1229DB1470082946D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
