@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
+   uuid = "09E14645-2293-4C16-83DE-5315BFF9EC26"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "1385CE91-6331-4022-9E37-22909D007FAA"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -17,21 +19,71 @@
             endingLineNumber = "65"
             landmarkName = "textFieldShouldReturn(_:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1385CE91-6331-4022-9E37-22909D007FAA - a3397cc7fbc1248e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "xcconfig_dev.StaticTableDataProvider.textFieldShouldReturn(__C.UITextField) -&gt; Swift.Bool"
+                  moduleName = "xcconfig_dev"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/test/Documents/*Arohak/Swift/xcconfig_template/xcconfig_template/Common/StaticTableView_Enum/StaticTableDataProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "223">
+               </Location>
+               <Location
+                  uuid = "1385CE91-6331-4022-9E37-22909D007FAA - 3dee010495273ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AHFramework.StaticTableDataProvider.textFieldShouldReturn(__C.UITextField) -&gt; Swift.Bool"
+                  moduleName = "AHFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/test/Documents/*Arohak/Swift/xcconfig_template/xcconfig_template/Common/StaticTableView_Enum/StaticTableDataProvider.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "223">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
+            uuid = "0A5D24DE-91DE-47F9-88E0-660A06633665"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "xcconfig_template/ViewController/StyleViewController.swift"
+            timestampString = "588535260.252498"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41894A4E-4774-4375-9B80-85BE6D760D6B"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "xcconfig_template/Common/StaticTableView_Enum/StaticTableDataProvider.swift"
-            timestampString = "580760693.384365"
+            filePath = "xcconfig_template/AppDelegate.swift"
+            timestampString = "589917914.905111"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "tableView(_:cellForRowAt:)"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

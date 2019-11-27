@@ -5,12 +5,12 @@
 import Foundation
 import AHProvider
 
-enum Guardian {
+public enum Guardian {
     case searchFeed(_ size: String)
 }
 
 extension Guardian: AHRequest {
-    var method: AHHttpMethod {
+    public var method: AHHttpMethod {
         switch self {
         case .searchFeed:
             print(Configuration.baseURL)
@@ -20,25 +20,25 @@ extension Guardian: AHRequest {
         }
     }
 
-    var baseURL: URL {
+    public var baseURL: URL {
         return Configuration.baseURL
     }
 
-    var path: String {
+    public var path: String {
         switch self {
         case .searchFeed:
             return "search"
         }
     }
 
-    var params: [String : String]? {
+    public var params: [String : String]? {
         switch self {
         case .searchFeed(let size):
             return ["format": Configuration.format, "page-size": size]
         }
     }
 
-    var headers: [String : String]? {
+    public var headers: [String : String]? {
         switch self {
         case .searchFeed:
             let key = ["api-key" : Configuration.apiKey]

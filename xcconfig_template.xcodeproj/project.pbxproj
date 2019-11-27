@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,7 @@
 		521867082267B8D9002DCB40 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 521867072267B8D9002DCB40 /* Configuration.plist */; };
 		5218670B2267B9CE002DCB40 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218670A2267B9CE002DCB40 /* Configuration.swift */; };
 		521867122267BFDD002DCB40 /* Guardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218670E2267BFDD002DCB40 /* Guardian.swift */; };
-		5218671A2267C0BF002DCB40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867162267C0BF002DCB40 /* ViewController.swift */; };
+		5218671A2267C0BF002DCB40 /* GuardianTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867162267C0BF002DCB40 /* GuardianTableViewController.swift */; };
 		5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867192267C0BF002DCB40 /* NewsFeed.swift */; };
 		521FDF8F22880F92000F277A /* EventableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FDF8E22880F92000F277A /* EventableViewController.swift */; };
 		521FDF912288100A000F277A /* Eventable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521FDF902288100A000F277A /* Eventable.swift */; };
@@ -36,6 +36,16 @@
 		523ACDA5229DB2850082946D /* StaticTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD88229DA3570082946D /* StaticTableCell.swift */; };
 		523ACDA6229DB2850082946D /* StaticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD8E229DA70B0082946D /* StaticModel.swift */; };
 		523ACDA7229DB2A40082946D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523ACD8C229DA65D0082946D /* Extensions.swift */; };
+		526C7A4E236EC7050014E7C7 /* Weakifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526C7A4D236EC7050014E7C7 /* Weakifiable.swift */; };
+		52E3010922A0855100F409F3 /* Guardian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218670E2267BFDD002DCB40 /* Guardian.swift */; };
+		52E3010A22A0857500F409F3 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5218670A2267B9CE002DCB40 /* Configuration.swift */; };
+		52E3010B22A0860600F409F3 /* GuardianTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867162267C0BF002DCB40 /* GuardianTableViewController.swift */; };
+		52E3010C22A0861900F409F3 /* NewsFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521867192267C0BF002DCB40 /* NewsFeed.swift */; };
+		52ECDFE1238F07670065D12F /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFE0238F07670065D12F /* TableViewDataSource.swift */; };
+		52ECDFE3238F08E60065D12F /* DataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFE2238F08E60065D12F /* DataSourceViewController.swift */; };
+		52ECDFE5238F14E30065D12F /* SectionedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFE4238F14E30065D12F /* SectionedTableViewDataSource.swift */; };
+		52F31ACA2314378D00EF744E /* Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F31AC92314378D00EF744E /* Styling.swift */; };
+		52F31ACC23143B0900EF744E /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F31ACB23143B0900EF744E /* StyleViewController.swift */; };
 		E363F3C8CC1D95659D6EF2D6 /* Pods_xcconfig_template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,9 +75,10 @@
 
 /* Begin PBXFileReference section */
 		0BB3944B52B14616BB4DCA67 /* Pods_AHFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		129C0C969E49B5DF9A5819E6 /* Pods-xcconfig_template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcconfig_template.release.xcconfig"; path = "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.release.xcconfig"; sourceTree = "<group>"; };
 		3503E2AF705A21AE66F78367 /* Pods-AHFramework.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFramework.development.xcconfig"; path = "Pods/Target Support Files/Pods-AHFramework/Pods-AHFramework.development.xcconfig"; sourceTree = "<group>"; };
 		42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xcconfig_template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		521866EB2267AF78002DCB40 /* xcconfig_template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcconfig_template.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		521866EB2267AF78002DCB40 /* xcconfig_template_debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcconfig_template_debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521866EE2267AF78002DCB40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		521866F32267AF78002DCB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		521866F52267AF7B002DCB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +91,7 @@
 		521867072267B8D9002DCB40 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		5218670A2267B9CE002DCB40 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		5218670E2267BFDD002DCB40 /* Guardian.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guardian.swift; sourceTree = "<group>"; };
-		521867162267C0BF002DCB40 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		521867162267C0BF002DCB40 /* GuardianTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuardianTableViewController.swift; sourceTree = "<group>"; };
 		521867192267C0BF002DCB40 /* NewsFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsFeed.swift; sourceTree = "<group>"; };
 		521FDF8E22880F92000F277A /* EventableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventableViewController.swift; sourceTree = "<group>"; };
 		521FDF902288100A000F277A /* Eventable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Eventable.swift; sourceTree = "<group>"; };
@@ -96,8 +107,16 @@
 		523ACD95229DB1470082946D /* AHFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		523ACD97229DB1470082946D /* AHFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHFramework.h; sourceTree = "<group>"; };
 		523ACD98229DB1470082946D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		526C7A4D236EC7050014E7C7 /* Weakifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weakifiable.swift; sourceTree = "<group>"; };
+		52ECDFE0238F07670065D12F /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		52ECDFE2238F08E60065D12F /* DataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceViewController.swift; sourceTree = "<group>"; };
+		52ECDFE4238F14E30065D12F /* SectionedTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedTableViewDataSource.swift; sourceTree = "<group>"; };
+		52F31AC92314378D00EF744E /* Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styling.swift; sourceTree = "<group>"; };
+		52F31ACB23143B0900EF744E /* StyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
+		7E223FCC659C77D1F72529B1 /* Pods-xcconfig_template.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcconfig_template.development.xcconfig"; path = "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.development.xcconfig"; sourceTree = "<group>"; };
 		D7832CB9FF6FEF738F9C85D4 /* Pods-AHFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHFramework/Pods-AHFramework.release.xcconfig"; sourceTree = "<group>"; };
 		DDDDB052C0EEB24131909969 /* Pods-AHFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHFramework/Pods-AHFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		F11BFEBF36394F4D64FA9981 /* Pods-xcconfig_template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcconfig_template.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,7 +154,7 @@
 		521866EC2267AF78002DCB40 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				521866EB2267AF78002DCB40 /* xcconfig_template.app */,
+				521866EB2267AF78002DCB40 /* xcconfig_template_debug.app */,
 				523ACD95229DB1470082946D /* AHFramework.framework */,
 			);
 			name = Products;
@@ -177,6 +196,9 @@
 		5218670C2267BFDD002DCB40 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				52ECDFDF238F064C0065D12F /* TableViewDataSource */,
+				526C7A4C236EC7050014E7C7 /* Weakifiable */,
+				52F31AC82314375500EF744E /* Styling */,
 				523ACD83229D31B30082946D /* StaticTableView_Enum */,
 				5221155A22762F67003E147B /* DynamicTableView_Generic */,
 				521FDF8D22880F6A000F277A /* Eventable */,
@@ -197,10 +219,12 @@
 		521867152267C0BF002DCB40 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				521867162267C0BF002DCB40 /* ViewController.swift */,
+				521867162267C0BF002DCB40 /* GuardianTableViewController.swift */,
 				521FDF8E22880F92000F277A /* EventableViewController.swift */,
 				521FDF92228813DB000F277A /* DynamicTableViewController.swift */,
 				523ACD86229D3E500082946D /* StaticTableViewController.swift */,
+				52F31ACB23143B0900EF744E /* StyleViewController.swift */,
+				52ECDFE2238F08E60065D12F /* DataSourceViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -270,6 +294,31 @@
 			path = AHFramework;
 			sourceTree = "<group>";
 		};
+		526C7A4C236EC7050014E7C7 /* Weakifiable */ = {
+			isa = PBXGroup;
+			children = (
+				526C7A4D236EC7050014E7C7 /* Weakifiable.swift */,
+			);
+			path = Weakifiable;
+			sourceTree = "<group>";
+		};
+		52ECDFDF238F064C0065D12F /* TableViewDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				52ECDFE4238F14E30065D12F /* SectionedTableViewDataSource.swift */,
+				52ECDFE0238F07670065D12F /* TableViewDataSource.swift */,
+			);
+			path = TableViewDataSource;
+			sourceTree = "<group>";
+		};
+		52F31AC82314375500EF744E /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				52F31AC92314378D00EF744E /* Styling.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
 		94EF026CD103FF1FD67900E3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +334,9 @@
 				DDDDB052C0EEB24131909969 /* Pods-AHFramework.debug.xcconfig */,
 				3503E2AF705A21AE66F78367 /* Pods-AHFramework.development.xcconfig */,
 				D7832CB9FF6FEF738F9C85D4 /* Pods-AHFramework.release.xcconfig */,
+				F11BFEBF36394F4D64FA9981 /* Pods-xcconfig_template.debug.xcconfig */,
+				7E223FCC659C77D1F72529B1 /* Pods-xcconfig_template.development.xcconfig */,
+				129C0C969E49B5DF9A5819E6 /* Pods-xcconfig_template.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -321,7 +373,7 @@
 			);
 			name = xcconfig_template;
 			productName = xcconfig_template;
-			productReference = 521866EB2267AF78002DCB40 /* xcconfig_template.app */;
+			productReference = 521866EB2267AF78002DCB40 /* xcconfig_template_debug.app */;
 			productType = "com.apple.product-type.application";
 		};
 		523ACD94229DB1470082946D /* AHFramework */ = {
@@ -452,20 +504,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AHProvider/AHProvider.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHProvider.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -480,17 +527,23 @@
 				5221155C22762F8E003E147B /* BaseTableViewController.swift in Sources */,
 				521FDF912288100A000F277A /* Eventable.swift in Sources */,
 				523ACD85229D33980082946D /* StaticTableDataProvider.swift in Sources */,
+				52ECDFE1238F07670065D12F /* TableViewDataSource.swift in Sources */,
 				523ACD8F229DA70B0082946D /* StaticModel.swift in Sources */,
-				5218671A2267C0BF002DCB40 /* ViewController.swift in Sources */,
+				5218671A2267C0BF002DCB40 /* GuardianTableViewController.swift in Sources */,
 				523ACD87229D3E510082946D /* StaticTableViewController.swift in Sources */,
 				523ACD89229DA3570082946D /* StaticTableCell.swift in Sources */,
 				521FDF93228813DB000F277A /* DynamicTableViewController.swift in Sources */,
+				526C7A4E236EC7050014E7C7 /* Weakifiable.swift in Sources */,
 				5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */,
+				52F31ACA2314378D00EF744E /* Styling.swift in Sources */,
+				52F31ACC23143B0900EF744E /* StyleViewController.swift in Sources */,
 				523ACD8D229DA65D0082946D /* Extensions.swift in Sources */,
 				521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */,
 				521FDF8F22880F92000F277A /* EventableViewController.swift in Sources */,
 				5218670B2267B9CE002DCB40 /* Configuration.swift in Sources */,
 				521867122267BFDD002DCB40 /* Guardian.swift in Sources */,
+				52ECDFE3238F08E60065D12F /* DataSourceViewController.swift in Sources */,
+				52ECDFE5238F14E30065D12F /* SectionedTableViewDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +553,11 @@
 			files = (
 				523ACDA7229DB2A40082946D /* Extensions.swift in Sources */,
 				523ACDA3229DB2310082946D /* StaticTableViewController.swift in Sources */,
+				52E3010B22A0860600F409F3 /* GuardianTableViewController.swift in Sources */,
+				52E3010A22A0857500F409F3 /* Configuration.swift in Sources */,
+				52E3010922A0855100F409F3 /* Guardian.swift in Sources */,
 				523ACDA6229DB2850082946D /* StaticModel.swift in Sources */,
+				52E3010C22A0861900F409F3 /* NewsFeed.swift in Sources */,
 				523ACDA4229DB2850082946D /* StaticTableDataProvider.swift in Sources */,
 				523ACDA5229DB2850082946D /* StaticTableCell.swift in Sources */,
 			);
@@ -660,13 +717,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK8C7HUHMZ;
+				Env = Debug;
 				INFOPLIST_FILE = xcconfig_template/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arohak.xcconfig-template";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)_debug";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -680,13 +738,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK8C7HUHMZ;
+				Env = Release;
 				INFOPLIST_FILE = xcconfig_template/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.arohak.xcconfig-template";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = xcconfig;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -761,13 +820,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WK8C7HUHMZ;
+				Env = Development;
 				INFOPLIST_FILE = xcconfig_template/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.arohak.xcconfig-template";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.arohak.xcconfig-template_dev";
+				PRODUCT_NAME = xcconfig_dev;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

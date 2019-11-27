@@ -11,31 +11,22 @@ protocol ConfigProtocol {
 }
 
 enum Configuration {
-    static let infoDictionary = Config.getInfoDictionary()
+    typealias Dict = [String: Any]
+    static let infoDictionary = getInfoDictionary()
 
-    struct Keys {
-        static let baseUrl = "base_url"
-        static let apiKey = "api_key"
-        static let format = "format"
-    }
+    static func getInfoDictionary() -> Dict {
+        let bundle = Bundle.main
+        let configPath = bundle.path(forResource: "Configuration", ofType: "plist")!
+        let plist = NSDictionary(contentsOfFile: configPath) as? Dict
 
-    struct Config {
-        static func getInfoDictionary() -> NSDictionary {
-            let bundle = Bundle.main
-            let configPath = bundle.path(forResource: "Configuration", ofType: "plist")!
-            let config = NSDictionary(contentsOfFile: configPath)!
-
-            let dict = NSMutableDictionary()
-            if let commonConfig = config["Common"] as? [AnyHashable: Any] {
-                dict.addEntries(from: commonConfig)
-            }
-            if let environment = bundle.infoDictionary?["Environment"] as? String {
-                if let environmentConfig = config[environment] as? [AnyHashable: Any] {
-                    dict.addEntries(from: environmentConfig)
-                }
-            }
-            return dict
+        var temp = Dict()
+        if let dict = plist?["Common"] as? Dict {
+            temp = dict
         }
+        if let environment = bundle.infoDictionary?["Environment"] as? String, let dict = plist?[environment] as? Dict {
+            temp = temp.merging(dict) { $1 }
+        }
+        return temp
     }
 
     static private func value<T>(for key: String) -> T {
@@ -47,6 +38,12 @@ enum Configuration {
 }
 
 extension Configuration: ConfigProtocol {
+    struct Keys {
+        static let baseUrl = "base_url"
+        static let apiKey = "api_key"
+        static let format = "format"
+    }
+
     static var baseURL: URL {
         return URL(string: value(for: Keys.baseUrl))!
     }
