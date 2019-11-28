@@ -7,7 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01E54F2539D2A9E4B53FEAAD /* Pods_AHFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BB3944B52B14616BB4DCA67 /* Pods_AHFramework.framework */; };
+		124A33622388659600802213 /* AHPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A33612388659600802213 /* AHPromise.swift */; };
+		124A336423886A8A00802213 /* AHFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A336323886A8A00802213 /* AHFuture.swift */; };
+		124A3370238940C000802213 /* AHPromise+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A336F238940C000802213 /* AHPromise+Extras.swift */; };
+		124A33722389446F00802213 /* AHCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A33712389446F00802213 /* AHCallback.swift */; };
+		124A337F238949C400802213 /* URLSession+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A337E238949C400802213 /* URLSession+Ext.swift */; };
+		124A3382238AD0F700802213 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		4520D61FAFB27238E89081D0 /* Pods_AHFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00DC274C106DEA5967C4094 /* Pods_AHFramework.framework */; };
+		520F80A32275F35E00526A13 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521866EE2267AF78002DCB40 /* AppDelegate.swift */; };
 		521866F42267AF78002DCB40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521866F22267AF78002DCB40 /* Main.storyboard */; };
 		521866F62267AF7B002DCB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 521866F52267AF7B002DCB40 /* Assets.xcassets */; };
@@ -75,9 +82,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0BB3944B52B14616BB4DCA67 /* Pods_AHFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		129C0C969E49B5DF9A5819E6 /* Pods-xcconfig_template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcconfig_template.release.xcconfig"; path = "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.release.xcconfig"; sourceTree = "<group>"; };
-		3503E2AF705A21AE66F78367 /* Pods-AHFramework.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFramework.development.xcconfig"; path = "Pods/Target Support Files/Pods-AHFramework/Pods-AHFramework.development.xcconfig"; sourceTree = "<group>"; };
+		124A33612388659600802213 /* AHPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHPromise.swift; sourceTree = "<group>"; };
+		124A336323886A8A00802213 /* AHFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHFuture.swift; sourceTree = "<group>"; };
+		124A336F238940C000802213 /* AHPromise+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AHPromise+Extras.swift"; sourceTree = "<group>"; };
+		124A33712389446F00802213 /* AHCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHCallback.swift; sourceTree = "<group>"; };
+		124A337E238949C400802213 /* URLSession+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Ext.swift"; sourceTree = "<group>"; };
 		42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xcconfig_template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		521866EB2267AF78002DCB40 /* xcconfig_template_debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcconfig_template_debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521866EE2267AF78002DCB40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +125,10 @@
 		52F31AC92314378D00EF744E /* Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styling.swift; sourceTree = "<group>"; };
 		52F31ACB23143B0900EF744E /* StyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
 		7E223FCC659C77D1F72529B1 /* Pods-xcconfig_template.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcconfig_template.development.xcconfig"; path = "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.development.xcconfig"; sourceTree = "<group>"; };
+		8042F665C9E6BAF3753E5B3F /* Pods-AHFramework.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFramework.development.xcconfig"; path = "Pods/Target Support Files/Pods-AHFramework/Pods-AHFramework.development.xcconfig"; sourceTree = "<group>"; };
+		D00DC274C106DEA5967C4094 /* Pods_AHFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AHFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7832CB9FF6FEF738F9C85D4 /* Pods-AHFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-AHFramework/Pods-AHFramework.release.xcconfig"; sourceTree = "<group>"; };
+		DD36A43F1C7C902E814C5C78 /* Pods-xcconfig_template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcconfig_template.release.xcconfig"; path = "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.release.xcconfig"; sourceTree = "<group>"; };
 		DDDDB052C0EEB24131909969 /* Pods-AHFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AHFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AHFramework/Pods-AHFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		F11BFEBF36394F4D64FA9981 /* Pods-xcconfig_template.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcconfig_template.debug.xcconfig"; path = "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,6 +140,7 @@
 			files = (
 				523ACD9C229DB1470082946D /* AHFramework.framework in Frameworks */,
 				E363F3C8CC1D95659D6EF2D6 /* Pods_xcconfig_template.framework in Frameworks */,
+				124A3382238AD0F700802213 /* (null) in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,13 +148,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01E54F2539D2A9E4B53FEAAD /* Pods_AHFramework.framework in Frameworks */,
+				4520D61FAFB27238E89081D0 /* Pods_AHFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		124A33602388657400802213 /* Promise */ = {
+			isa = PBXGroup;
+			children = (
+				124A336C23893C0000802213 /* CoreKit */,
+				124A337E238949C400802213 /* URLSession+Ext.swift */,
+			);
+			path = Promise;
+			sourceTree = "<group>";
+		};
+		124A336C23893C0000802213 /* CoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				124A33712389446F00802213 /* AHCallback.swift */,
+				124A336323886A8A00802213 /* AHFuture.swift */,
+				124A33612388659600802213 /* AHPromise.swift */,
+				124A336F238940C000802213 /* AHPromise+Extras.swift */,
+			);
+			path = CoreKit;
+			sourceTree = "<group>";
+		};
 		521866E22267AF78002DCB40 = {
 			isa = PBXGroup;
 			children = (
@@ -204,6 +237,7 @@
 				523ACD83229D31B30082946D /* StaticTableView_Enum */,
 				5221155A22762F67003E147B /* DynamicTableView_Generic */,
 				521FDF8D22880F6A000F277A /* Eventable */,
+				124A33602388657400802213 /* Promise */,
 				5218670D2267BFDD002DCB40 /* Endpoints */,
 				523ACD8B229DA65D0082946D /* Extensions */,
 			);
@@ -326,7 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */,
-				0BB3944B52B14616BB4DCA67 /* Pods_AHFramework.framework */,
+				D00DC274C106DEA5967C4094 /* Pods_AHFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -335,11 +369,11 @@
 			isa = PBXGroup;
 			children = (
 				DDDDB052C0EEB24131909969 /* Pods-AHFramework.debug.xcconfig */,
-				3503E2AF705A21AE66F78367 /* Pods-AHFramework.development.xcconfig */,
 				D7832CB9FF6FEF738F9C85D4 /* Pods-AHFramework.release.xcconfig */,
 				F11BFEBF36394F4D64FA9981 /* Pods-xcconfig_template.debug.xcconfig */,
 				7E223FCC659C77D1F72529B1 /* Pods-xcconfig_template.development.xcconfig */,
-				129C0C969E49B5DF9A5819E6 /* Pods-xcconfig_template.release.xcconfig */,
+				8042F665C9E6BAF3753E5B3F /* Pods-AHFramework.development.xcconfig */,
+				DD36A43F1C7C902E814C5C78 /* Pods-xcconfig_template.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -544,6 +578,19 @@
 				523ACD8D229DA65D0082946D /* Extensions.swift in Sources */,
 				521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */,
 				521FDF8F22880F92000F277A /* EventableViewController.swift in Sources */,
+				5218670B2267B9CE002DCB40 /* Configuration.swift in Sources */,
+				124A33722389446F00802213 /* AHCallback.swift in Sources */,
+				52211560227630B7003E147B /* DynamicModel.swift in Sources */,
+				5221155E22762FE9003E147B /* BaseTableViewCell.swift in Sources */,
+				520F80A32275F35E00526A13 /* (null) in Sources */,
+				5221155C22762F8E003E147B /* BaseTableViewController.swift in Sources */,
+				5218671A2267C0BF002DCB40 /* GuardianTableViewController.swift in Sources */,
+				124A3370238940C000802213 /* AHPromise+Extras.swift in Sources */,
+				124A336423886A8A00802213 /* AHFuture.swift in Sources */,
+				5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */,
+				124A337F238949C400802213 /* URLSession+Ext.swift in Sources */,
+				521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */,
+				124A33622388659600802213 /* AHPromise.swift in Sources */,
 				5218670B2267B9CE002DCB40 /* Configuration.swift in Sources */,
 				521867122267BFDD002DCB40 /* Guardian.swift in Sources */,
 				52ECDFE3238F08E60065D12F /* DataSourceViewController.swift in Sources */,
@@ -869,7 +916,7 @@
 		};
 		523ACDA0229DB1470082946D /* Development */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3503E2AF705A21AE66F78367 /* Pods-AHFramework.development.xcconfig */;
+			baseConfigurationReference = 8042F665C9E6BAF3753E5B3F /* Pods-AHFramework.development.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
