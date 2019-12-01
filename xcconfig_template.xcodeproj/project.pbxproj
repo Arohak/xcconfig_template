@@ -44,6 +44,7 @@
 		52ECDFE1238F07670065D12F /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFE0238F07670065D12F /* TableViewDataSource.swift */; };
 		52ECDFE3238F08E60065D12F /* DataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFE2238F08E60065D12F /* DataSourceViewController.swift */; };
 		52ECDFE5238F14E30065D12F /* SectionedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFE4238F14E30065D12F /* SectionedTableViewDataSource.swift */; };
+		52ECDFE72392C5360065D12F /* DiffableDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFE62392C5360065D12F /* DiffableDataSourceViewController.swift */; };
 		52F31ACA2314378D00EF744E /* Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F31AC92314378D00EF744E /* Styling.swift */; };
 		52F31ACC23143B0900EF744E /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F31ACB23143B0900EF744E /* StyleViewController.swift */; };
 		E363F3C8CC1D95659D6EF2D6 /* Pods_xcconfig_template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */; };
@@ -111,6 +112,7 @@
 		52ECDFE0238F07670065D12F /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		52ECDFE2238F08E60065D12F /* DataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceViewController.swift; sourceTree = "<group>"; };
 		52ECDFE4238F14E30065D12F /* SectionedTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedTableViewDataSource.swift; sourceTree = "<group>"; };
+		52ECDFE62392C5360065D12F /* DiffableDataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceViewController.swift; sourceTree = "<group>"; };
 		52F31AC92314378D00EF744E /* Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styling.swift; sourceTree = "<group>"; };
 		52F31ACB23143B0900EF744E /* StyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
 		7E223FCC659C77D1F72529B1 /* Pods-xcconfig_template.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcconfig_template.development.xcconfig"; path = "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.development.xcconfig"; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				523ACD86229D3E500082946D /* StaticTableViewController.swift */,
 				52F31ACB23143B0900EF744E /* StyleViewController.swift */,
 				52ECDFE2238F08E60065D12F /* DataSourceViewController.swift */,
+				52ECDFE62392C5360065D12F /* DiffableDataSourceViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -525,6 +528,7 @@
 				52211560227630B7003E147B /* DynamicModel.swift in Sources */,
 				5221155E22762FE9003E147B /* BaseTableViewCell.swift in Sources */,
 				5221155C22762F8E003E147B /* BaseTableViewController.swift in Sources */,
+				52ECDFE72392C5360065D12F /* DiffableDataSourceViewController.swift in Sources */,
 				521FDF912288100A000F277A /* Eventable.swift in Sources */,
 				523ACD85229D33980082946D /* StaticTableDataProvider.swift in Sources */,
 				52ECDFE1238F07670065D12F /* TableViewDataSource.swift in Sources */,

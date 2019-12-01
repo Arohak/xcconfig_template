@@ -32,18 +32,19 @@ class TableViewDataSource<Model, Cell: UITableViewCell>: NSObject, UITableViewDa
     }
 }
 
-extension TableViewDataSource where Model == Message {
-    static func make(for messages: [Message]) -> TableViewDataSource {
+extension TableViewDataSource where Model == DataSourceViewController.Message {
+    static func make(for messages: [DataSourceViewController.Message]) -> TableViewDataSource {
         return TableViewDataSource(models: messages) { (message, cell) in
             cell.textLabel?.text = message.title
         }
     }
 }
 
-extension TableViewDataSource where Model == Contact {
-    static func make(for contacts: [Contact]) -> TableViewDataSource {
+extension TableViewDataSource where Model == DataSourceViewController.Contact {
+    static func make(for contacts: [DataSourceViewController.Contact]) -> TableViewDataSource {
         return TableViewDataSource(models: contacts) { (contact, cell) in
             cell.textLabel?.text = contact.number
         }
     }
 }
+
