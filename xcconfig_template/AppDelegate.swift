@@ -46,6 +46,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            print("viewDidAppear")
 //        }
 
+        //MARK: - Promise
+//        APIManager.getData()
+
+        //MARK: - Property Wrapper
+//        ConsoleLoggedConfig.test()
+//        UserDefaultConfig.test()
+//        AtomicConfig.test()
+
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window!.rootViewController = vc
         self.window!.makeKeyAndVisible()

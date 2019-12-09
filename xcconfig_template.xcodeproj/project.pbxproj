@@ -52,6 +52,9 @@
 		52ECDFE3238F08E60065D12F /* DataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFE2238F08E60065D12F /* DataSourceViewController.swift */; };
 		52ECDFE5238F14E30065D12F /* SectionedTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFE4238F14E30065D12F /* SectionedTableViewDataSource.swift */; };
 		52ECDFE72392C5360065D12F /* DiffableDataSourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFE62392C5360065D12F /* DiffableDataSourceViewController.swift */; };
+		52ECDFEA239D19E60065D12F /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFE9239D19E50065D12F /* UserDefault.swift */; };
+		52ECDFEC239D1F3E0065D12F /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFEB239D1F3E0065D12F /* Atomic.swift */; };
+		52ECDFEE239EC9D10065D12F /* ConsoleLogged.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52ECDFED239EC9D10065D12F /* ConsoleLogged.swift */; };
 		52F31ACA2314378D00EF744E /* Styling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F31AC92314378D00EF744E /* Styling.swift */; };
 		52F31ACC23143B0900EF744E /* StyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F31ACB23143B0900EF744E /* StyleViewController.swift */; };
 		E363F3C8CC1D95659D6EF2D6 /* Pods_xcconfig_template.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */; };
@@ -122,6 +125,9 @@
 		52ECDFE2238F08E60065D12F /* DataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceViewController.swift; sourceTree = "<group>"; };
 		52ECDFE4238F14E30065D12F /* SectionedTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedTableViewDataSource.swift; sourceTree = "<group>"; };
 		52ECDFE62392C5360065D12F /* DiffableDataSourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableDataSourceViewController.swift; sourceTree = "<group>"; };
+		52ECDFE9239D19E50065D12F /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		52ECDFEB239D1F3E0065D12F /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
+		52ECDFED239EC9D10065D12F /* ConsoleLogged.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleLogged.swift; sourceTree = "<group>"; };
 		52F31AC92314378D00EF744E /* Styling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styling.swift; sourceTree = "<group>"; };
 		52F31ACB23143B0900EF744E /* StyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleViewController.swift; sourceTree = "<group>"; };
 		7E223FCC659C77D1F72529B1 /* Pods-xcconfig_template.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-xcconfig_template.development.xcconfig"; path = "Pods/Target Support Files/Pods-xcconfig_template/Pods-xcconfig_template.development.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +237,7 @@
 		5218670C2267BFDD002DCB40 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				52ECDFE8239D16E40065D12F /* PropertyWrapper */,
 				52ECDFDF238F064C0065D12F /* TableViewDataSource */,
 				526C7A4C236EC7050014E7C7 /* Weakifiable */,
 				52F31AC82314375500EF744E /* Styling */,
@@ -346,6 +353,16 @@
 				52ECDFE0238F07670065D12F /* TableViewDataSource.swift */,
 			);
 			path = TableViewDataSource;
+			sourceTree = "<group>";
+		};
+		52ECDFE8239D16E40065D12F /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				52ECDFED239EC9D10065D12F /* ConsoleLogged.swift */,
+				52ECDFE9239D19E50065D12F /* UserDefault.swift */,
+				52ECDFEB239D1F3E0065D12F /* Atomic.swift */,
+			);
+			path = PropertyWrapper;
 			sourceTree = "<group>";
 		};
 		52F31AC82314375500EF744E /* Styling */ = {
@@ -559,6 +576,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52ECDFEA239D19E60065D12F /* UserDefault.swift in Sources */,
 				52211560227630B7003E147B /* DynamicModel.swift in Sources */,
 				5221155E22762FE9003E147B /* BaseTableViewCell.swift in Sources */,
 				5221155C22762F8E003E147B /* BaseTableViewController.swift in Sources */,
@@ -577,6 +595,7 @@
 				52F31ACC23143B0900EF744E /* StyleViewController.swift in Sources */,
 				523ACD8D229DA65D0082946D /* Extensions.swift in Sources */,
 				521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */,
+				52ECDFEE239EC9D10065D12F /* ConsoleLogged.swift in Sources */,
 				521FDF8F22880F92000F277A /* EventableViewController.swift in Sources */,
 				5218670B2267B9CE002DCB40 /* Configuration.swift in Sources */,
 				124A33722389446F00802213 /* AHCallback.swift in Sources */,
@@ -584,6 +603,7 @@
 				5221155E22762FE9003E147B /* BaseTableViewCell.swift in Sources */,
 				520F80A32275F35E00526A13 /* (null) in Sources */,
 				5221155C22762F8E003E147B /* BaseTableViewController.swift in Sources */,
+				52ECDFEC239D1F3E0065D12F /* Atomic.swift in Sources */,
 				5218671A2267C0BF002DCB40 /* GuardianTableViewController.swift in Sources */,
 				124A3370238940C000802213 /* AHPromise+Extras.swift in Sources */,
 				124A336423886A8A00802213 /* AHFuture.swift in Sources */,
