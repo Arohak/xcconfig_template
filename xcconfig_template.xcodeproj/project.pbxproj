@@ -13,6 +13,13 @@
 		124A33722389446F00802213 /* AHCallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A33712389446F00802213 /* AHCallback.swift */; };
 		124A337F238949C400802213 /* URLSession+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A337E238949C400802213 /* URLSession+Ext.swift */; };
 		124A3382238AD0F700802213 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		12E5311D23AA3436000D629C /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5311C23AA3436000D629C /* AudioPlayer.swift */; };
+		12E5311F23AA384F000D629C /* ObservationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5311E23AA384F000D629C /* ObservationToken.swift */; };
+		12E5312123AA38F2000D629C /* Dictionary+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5312023AA38F2000D629C /* Dictionary+Ext.swift */; };
+		12E5312323AA541E000D629C /* ObserversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5312223AA541E000D629C /* ObserversViewController.swift */; };
+		12E5312723AA5DFF000D629C /* SecondAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5312623AA5DFF000D629C /* SecondAudioPlayer.swift */; };
+		12E5312923AA5E58000D629C /* AudioPlayerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5312823AA5E58000D629C /* AudioPlayerProtocol.swift */; };
+		12E5312B23AA5EC1000D629C /* FirstAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E5312A23AA5EC1000D629C /* FirstAudioPlayer.swift */; };
 		4520D61FAFB27238E89081D0 /* Pods_AHFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00DC274C106DEA5967C4094 /* Pods_AHFramework.framework */; };
 		520F80A32275F35E00526A13 /* (null) in Sources */ = {isa = PBXBuildFile; };
 		521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521866EE2267AF78002DCB40 /* AppDelegate.swift */; };
@@ -90,6 +97,13 @@
 		124A336F238940C000802213 /* AHPromise+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AHPromise+Extras.swift"; sourceTree = "<group>"; };
 		124A33712389446F00802213 /* AHCallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHCallback.swift; sourceTree = "<group>"; };
 		124A337E238949C400802213 /* URLSession+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Ext.swift"; sourceTree = "<group>"; };
+		12E5311C23AA3436000D629C /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		12E5311E23AA384F000D629C /* ObservationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationToken.swift; sourceTree = "<group>"; };
+		12E5312023AA38F2000D629C /* Dictionary+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Ext.swift"; sourceTree = "<group>"; };
+		12E5312223AA541E000D629C /* ObserversViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserversViewController.swift; sourceTree = "<group>"; };
+		12E5312623AA5DFF000D629C /* SecondAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondAudioPlayer.swift; sourceTree = "<group>"; };
+		12E5312823AA5E58000D629C /* AudioPlayerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerProtocol.swift; sourceTree = "<group>"; };
+		12E5312A23AA5EC1000D629C /* FirstAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstAudioPlayer.swift; sourceTree = "<group>"; };
 		42071F0C2E1AE2290718F937 /* Pods_xcconfig_template.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_xcconfig_template.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		521866EB2267AF78002DCB40 /* xcconfig_template_debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xcconfig_template_debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		521866EE2267AF78002DCB40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -181,6 +195,35 @@
 			path = CoreKit;
 			sourceTree = "<group>";
 		};
+		12E5311B23AA33F7000D629C /* Observers */ = {
+			isa = PBXGroup;
+			children = (
+				12E5311C23AA3436000D629C /* AudioPlayer.swift */,
+				12E5312523AA5D83000D629C /* Closure */,
+				12E5312423AA5D67000D629C /* Protocol */,
+			);
+			path = Observers;
+			sourceTree = "<group>";
+		};
+		12E5312423AA5D67000D629C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				12E5312623AA5DFF000D629C /* SecondAudioPlayer.swift */,
+				12E5312823AA5E58000D629C /* AudioPlayerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		12E5312523AA5D83000D629C /* Closure */ = {
+			isa = PBXGroup;
+			children = (
+				12E5312A23AA5EC1000D629C /* FirstAudioPlayer.swift */,
+				12E5311E23AA384F000D629C /* ObservationToken.swift */,
+				12E5312023AA38F2000D629C /* Dictionary+Ext.swift */,
+			);
+			path = Closure;
+			sourceTree = "<group>";
+		};
 		521866E22267AF78002DCB40 = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +280,7 @@
 		5218670C2267BFDD002DCB40 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				12E5311B23AA33F7000D629C /* Observers */,
 				52ECDFE8239D16E40065D12F /* PropertyWrapper */,
 				52ECDFDF238F064C0065D12F /* TableViewDataSource */,
 				526C7A4C236EC7050014E7C7 /* Weakifiable */,
@@ -269,6 +313,7 @@
 				52F31ACB23143B0900EF744E /* StyleViewController.swift */,
 				52ECDFE2238F08E60065D12F /* DataSourceViewController.swift */,
 				52ECDFE62392C5360065D12F /* DiffableDataSourceViewController.swift */,
+				12E5312223AA541E000D629C /* ObserversViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -585,9 +630,11 @@
 				523ACD85229D33980082946D /* StaticTableDataProvider.swift in Sources */,
 				52ECDFE1238F07670065D12F /* TableViewDataSource.swift in Sources */,
 				523ACD8F229DA70B0082946D /* StaticModel.swift in Sources */,
+				12E5312B23AA5EC1000D629C /* FirstAudioPlayer.swift in Sources */,
 				5218671A2267C0BF002DCB40 /* GuardianTableViewController.swift in Sources */,
 				523ACD87229D3E510082946D /* StaticTableViewController.swift in Sources */,
 				523ACD89229DA3570082946D /* StaticTableCell.swift in Sources */,
+				12E5312923AA5E58000D629C /* AudioPlayerProtocol.swift in Sources */,
 				521FDF93228813DB000F277A /* DynamicTableViewController.swift in Sources */,
 				526C7A4E236EC7050014E7C7 /* Weakifiable.swift in Sources */,
 				5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */,
@@ -595,6 +642,8 @@
 				52F31ACC23143B0900EF744E /* StyleViewController.swift in Sources */,
 				523ACD8D229DA65D0082946D /* Extensions.swift in Sources */,
 				521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */,
+				12E5311F23AA384F000D629C /* ObservationToken.swift in Sources */,
+				12E5312323AA541E000D629C /* ObserversViewController.swift in Sources */,
 				52ECDFEE239EC9D10065D12F /* ConsoleLogged.swift in Sources */,
 				521FDF8F22880F92000F277A /* EventableViewController.swift in Sources */,
 				5218670B2267B9CE002DCB40 /* Configuration.swift in Sources */,
@@ -603,8 +652,11 @@
 				5221155E22762FE9003E147B /* BaseTableViewCell.swift in Sources */,
 				520F80A32275F35E00526A13 /* (null) in Sources */,
 				5221155C22762F8E003E147B /* BaseTableViewController.swift in Sources */,
+				12E5311D23AA3436000D629C /* AudioPlayer.swift in Sources */,
 				52ECDFEC239D1F3E0065D12F /* Atomic.swift in Sources */,
 				5218671A2267C0BF002DCB40 /* GuardianTableViewController.swift in Sources */,
+				12E5312123AA38F2000D629C /* Dictionary+Ext.swift in Sources */,
+				12E5312723AA5DFF000D629C /* SecondAudioPlayer.swift in Sources */,
 				124A3370238940C000802213 /* AHPromise+Extras.swift in Sources */,
 				124A336423886A8A00802213 /* AHFuture.swift in Sources */,
 				5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */,
