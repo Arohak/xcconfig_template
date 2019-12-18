@@ -10,20 +10,19 @@ import Foundation
 import UIKit
 
 class AudioPlayer {
+    typealias Item = String
+
     enum State {
         case idle
         case playing(Item)
         case paused(Item)
     }
-    
-    typealias Item = String
-    typealias AudioPlayerItemClosure = (AudioPlayer, Item) -> Void
-    typealias AudioPlayerClosure = (AudioPlayer) -> Void
 
     var state = State.idle {
-        didSet { stateDidChange() }
+        didSet {
+            stateDidChange()
+        }
     }
-
 
     func stateDidChange() {}
 }

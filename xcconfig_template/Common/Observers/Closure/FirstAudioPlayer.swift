@@ -9,6 +9,8 @@
 import Foundation
 
 class FirstAudioPlayer: AudioPlayer {
+    typealias AudioPlayerItemClosure = (AudioPlayer, Item) -> Void
+    typealias AudioPlayerClosure = (AudioPlayer) -> Void
     
     private var observations = (
         started: [UUID: AudioPlayerItemClosure](),
