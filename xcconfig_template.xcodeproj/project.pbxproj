@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1244F51423AD17C40088D803 /* KeyPathExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244F51323AD17C40088D803 /* KeyPathExamples.swift */; };
 		124A33622388659600802213 /* AHPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A33612388659600802213 /* AHPromise.swift */; };
 		124A336423886A8A00802213 /* AHFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A336323886A8A00802213 /* AHFuture.swift */; };
 		124A3370238940C000802213 /* AHPromise+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124A336F238940C000802213 /* AHPromise+Extras.swift */; };
@@ -92,6 +93,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1244F51323AD17C40088D803 /* KeyPathExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyPathExamples.swift; sourceTree = "<group>"; };
 		124A33612388659600802213 /* AHPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHPromise.swift; sourceTree = "<group>"; };
 		124A336323886A8A00802213 /* AHFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AHFuture.swift; sourceTree = "<group>"; };
 		124A336F238940C000802213 /* AHPromise+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AHPromise+Extras.swift"; sourceTree = "<group>"; };
@@ -175,6 +177,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1244F51523AD17C90088D803 /* KeyPath */ = {
+			isa = PBXGroup;
+			children = (
+				1244F51323AD17C40088D803 /* KeyPathExamples.swift */,
+			);
+			path = KeyPath;
+			sourceTree = "<group>";
+		};
 		124A33602388657400802213 /* Promise */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +290,7 @@
 		5218670C2267BFDD002DCB40 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				1244F51523AD17C90088D803 /* KeyPath */,
 				12E5311B23AA33F7000D629C /* Observers */,
 				52ECDFE8239D16E40065D12F /* PropertyWrapper */,
 				52ECDFDF238F064C0065D12F /* TableViewDataSource */,
@@ -501,7 +512,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Ara Hakobyan";
 				TargetAttributes = {
 					521866EA2267AF78002DCB40 = {
@@ -633,6 +644,7 @@
 				12E5312B23AA5EC1000D629C /* FirstAudioPlayer.swift in Sources */,
 				5218671A2267C0BF002DCB40 /* GuardianTableViewController.swift in Sources */,
 				523ACD87229D3E510082946D /* StaticTableViewController.swift in Sources */,
+				1244F51423AD17C40088D803 /* KeyPathExamples.swift in Sources */,
 				523ACD89229DA3570082946D /* StaticTableCell.swift in Sources */,
 				12E5312923AA5E58000D629C /* AudioPlayerProtocol.swift in Sources */,
 				521FDF93228813DB000F277A /* DynamicTableViewController.swift in Sources */,
@@ -648,22 +660,15 @@
 				521FDF8F22880F92000F277A /* EventableViewController.swift in Sources */,
 				5218670B2267B9CE002DCB40 /* Configuration.swift in Sources */,
 				124A33722389446F00802213 /* AHCallback.swift in Sources */,
-				52211560227630B7003E147B /* DynamicModel.swift in Sources */,
-				5221155E22762FE9003E147B /* BaseTableViewCell.swift in Sources */,
 				520F80A32275F35E00526A13 /* (null) in Sources */,
-				5221155C22762F8E003E147B /* BaseTableViewController.swift in Sources */,
 				12E5311D23AA3436000D629C /* AudioPlayer.swift in Sources */,
 				52ECDFEC239D1F3E0065D12F /* Atomic.swift in Sources */,
-				5218671A2267C0BF002DCB40 /* GuardianTableViewController.swift in Sources */,
 				12E5312123AA38F2000D629C /* Dictionary+Ext.swift in Sources */,
 				12E5312723AA5DFF000D629C /* SecondAudioPlayer.swift in Sources */,
 				124A3370238940C000802213 /* AHPromise+Extras.swift in Sources */,
 				124A336423886A8A00802213 /* AHFuture.swift in Sources */,
-				5218671C2267C0BF002DCB40 /* NewsFeed.swift in Sources */,
 				124A337F238949C400802213 /* URLSession+Ext.swift in Sources */,
-				521866EF2267AF78002DCB40 /* AppDelegate.swift in Sources */,
 				124A33622388659600802213 /* AHPromise.swift in Sources */,
-				5218670B2267B9CE002DCB40 /* Configuration.swift in Sources */,
 				521867122267BFDD002DCB40 /* Guardian.swift in Sources */,
 				52ECDFE3238F08E60065D12F /* DataSourceViewController.swift in Sources */,
 				52ECDFE5238F14E30065D12F /* SectionedTableViewDataSource.swift in Sources */,
