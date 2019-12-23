@@ -9,6 +9,21 @@
 import Foundation
 import UIKit
 
+
+struct KeyPathTest {
+    struct Data {
+        let name: String
+    }
+
+    let data = Data(name: "Ara")
+
+    func log() {
+        let nameKeyPath = \Data.name
+        print(data[keyPath: nameKeyPath])
+        print(data[keyPath: \.name])
+    }
+}
+
 struct Article {
     let id: Int
     let title: String
