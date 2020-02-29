@@ -9,6 +9,21 @@
 import Foundation
 import UIKit
 
+
+struct KeyPathTest {
+    struct Data {
+        let name: String
+    }
+
+    let data = Data(name: "Ara")
+
+    func log() {
+        let nameKeyPath = \Data.name
+        print(data[keyPath: nameKeyPath])
+        print(data[keyPath: \.name])
+    }
+}
+
 struct Article {
     let id: Int
     let title: String
@@ -78,15 +93,25 @@ func setter<Object: AnyObject, Value>(for object: Object, keyPath: ReferenceWrit
 }
 
 class ListViewController {
-//    private var items = [Item]() { didSet { render() } }
-//
-//    func loadItems() {
-//        loader.load { [weak self] items in
-//            self?.items = items
-//        }
-//    }
-//
-//    func loadItems() {
-//        loader.load(then: setter(for: self, keyPath: \.items))
-//    }
+    class Loader {
+        func load(then: ([String]) -> ()) {
+            let items = ["Hayk", "Asatur", "Narek"]
+            return then(items)
+        }
+    }
+
+    private let loader = Loader()
+    private var items = [String]()
+
+    // - a - Base
+    func loadItems_() {
+        loader.load { [weak self] items in
+            self?.items = items
+        }
+    }
+
+    // - b - KeyPath
+    func loadItems() {
+        loader.load(then: setter(for: self, keyPath: \.items))
+    }
 }
