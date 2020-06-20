@@ -1,0 +1,10 @@
+{
+    "aps" : {
+        "alert" : {
+            "title" : "https://github.com/Arohak",
+            "body" : "iOS development"
+        },
+        "badge" : 5
+    },
+    "Simulator Target Bundle": "com.arohak.xcconfig-template_dev"
+}
