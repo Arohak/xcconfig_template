@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 
 class ObserversViewController: UIViewController {
+    enum Event {
+        case action1(String)
+        case action2(Int)
+    }
+    
     enum Style {
         case closure
         case protocole
@@ -20,6 +25,8 @@ class ObserversViewController: UIViewController {
     private let firstPlayer = FirstAudioPlayer()
     private let secondPlayer = SecondAudioPlayer()
 
+    private var event: Completion<Event>?
+
     deinit {
         observationToken?.cancel()
     }
@@ -28,6 +35,8 @@ class ObserversViewController: UIViewController {
         super.viewDidLoad()
         
         testPlayer()
+        event?(.action1("1"))
+        event?(.action2(1))
     }
     
     private func testPlayer() {

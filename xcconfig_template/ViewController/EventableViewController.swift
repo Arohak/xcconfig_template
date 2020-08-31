@@ -8,22 +8,24 @@
 
 import UIKit
 
+public typealias Completion<T> = (T) -> ()
+
 final class EventableViewController: UIViewController {
-    internal var events = Event<Case>()
+    public var event: Completion<Event>?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        events[.viewDidLoad]?(nil)
+        event?(.viewDidLoad)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        events[.viewDidAppear]?(nil)
+        event?(.viewDidAppear)
     }
 }
 
-extension EventableViewController: Eventable {
-    enum Case {
+extension EventableViewController {
+    enum Event {
         case viewDidLoad
         case viewDidAppear
     }

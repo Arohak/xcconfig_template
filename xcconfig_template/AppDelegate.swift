@@ -41,13 +41,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        vc = DynamicTableViewController()
 
         //MARK: - Eventable
-//        vc = EventableViewController()
-//        vc.on(eventType: .viewDidLoad) { _ in
-//            print("viewDidLoad")
+//        let vc = EventableViewController()
+//        vc.event = { type in
+//            switch type {
+//            case .viewDidLoad:
+//                print("viewDidLoad")
+//            case .viewDidAppear:
+//                print("viewDidAppear")
+//            }
 //        }
-//        vc.on(eventType: .viewDidAppear) { _ in
-//            print("viewDidAppear")
-//        }
+//        self.vc = vc
 
         //MARK: - Promise
 //        APIManager.getData()
