@@ -17,8 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
+        //MARK: - CoreAnimationViewController
+        vc = CoreAnimationViewController()
+        
         //MARK: - ObserverViewController
-        vc = ObserversViewController()
+//        vc = ObserversViewController()
         
         //MARK: - DiffableDataSourceViewController
 //        if #available(iOS 13.0, *) {
@@ -63,10 +66,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window!.rootViewController = vc
         window!.makeKeyAndVisible()
-        
-        registerForPushNotifications()
-        
-        print(Configuration.apiKey)
+//
+//        registerForPushNotifications()
+//
+//        print(Configuration.apiKey)
         
         return true
     }
