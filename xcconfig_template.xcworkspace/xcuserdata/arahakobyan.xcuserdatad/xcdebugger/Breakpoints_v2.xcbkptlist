@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "87A069CB-A3F6-4159-97CF-85CD115105D7"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "28057F2B-CD11-446C-9B1C-E18C041A9785"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "xcconfig_template/ViewController/GuardianTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "getData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "28057F2B-CD11-446C-9B1C-E18C041A9785 - d6da282161dcbcac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Any, AHProvider.AHError&gt;) -&gt; () in xcconfig_dev.GuardianTableViewController.getData() -&gt; ()"
+                  moduleName = "xcconfig_dev"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arahakobyan/Library/Mobile%20Documents/com~apple~CloudDocs/%23Projects/%23My/xcconfig_template/xcconfig_template/ViewController/GuardianTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "157">
+               </Location>
+               <Location
+                  uuid = "28057F2B-CD11-446C-9B1C-E18C041A9785 - f8148f786391d79d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Any, AHProvider.AHError&gt;) -&gt; () in AHFramework.GuardianTableViewController.getData() -&gt; ()"
+                  moduleName = "AHFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arahakobyan/Library/Mobile%20Documents/com~apple~CloudDocs/%23Projects/%23My/xcconfig_template/xcconfig_template/ViewController/GuardianTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "157">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F0A5869D-E46D-48D4-A323-BD491C0E1A4A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "xcconfig_template/ViewController/CoreAnimationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "F0A5869D-E46D-48D4-A323-BD491C0E1A4A - fd765b9fa3eddc62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "xcconfig_dev.CoreAnimationViewController.gestureAction(__C.UIPanGestureRecognizer) -&gt; ()"
+                  moduleName = "xcconfig_dev"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arahakobyan/Library/Mobile%20Documents/com~apple~CloudDocs/%23Projects/%23My/xcconfig_template/xcconfig_template/ViewController/CoreAnimationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "365">
+               </Location>
+               <Location
+                  uuid = "F0A5869D-E46D-48D4-A323-BD491C0E1A4A - 60a8915686a5619c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AHFramework.CoreAnimationViewController.gestureAction(__C.UIPanGestureRecognizer) -&gt; ()"
+                  moduleName = "AHFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arahakobyan/Library/Mobile%20Documents/com~apple~CloudDocs/%23Projects/%23My/xcconfig_template/xcconfig_template/ViewController/CoreAnimationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "365">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
