@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AudioPlayerProtocol: class {
+protocol AudioPlayerProtocol: AnyObject {
     func audioPlayer(_ player: AudioPlayer, didStartPlaying item: AudioPlayer.Item)
     func audioPlayer(_ player: AudioPlayer, didPausePlaybackOf item: AudioPlayer.Item)
     func audioPlayerDidStop(_ player: AudioPlayer)

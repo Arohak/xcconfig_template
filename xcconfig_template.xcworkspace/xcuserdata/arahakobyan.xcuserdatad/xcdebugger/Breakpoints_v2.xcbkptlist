@@ -64,38 +64,86 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"
             endingLineNumber = "69"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            landmarkName = "gestureAction(_:)"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "F0A5869D-E46D-48D4-A323-BD491C0E1A4A - fd765b9fa3eddc62"
+                  uuid = "F0A5869D-E46D-48D4-A323-BD491C0E1A4A - 73401a79ccc2029b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "xcconfig_dev.CoreAnimationViewController.gestureAction(__C.UIPanGestureRecognizer) -&gt; ()"
-                  moduleName = "xcconfig_dev"
+                  symbolName = "xcconfig.CoreAnimationViewController.gestureAction(__C.UIPanGestureRecognizer) -&gt; ()"
+                  moduleName = "xcconfig"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arahakobyan/Library/Mobile%20Documents/com~apple~CloudDocs/%23Projects/%23My/xcconfig_template/xcconfig_template/ViewController/CoreAnimationViewController.swift"
+                  urlString = "file:///Users/arahakobyan/%23All/%23Projects/%23My/xcconfig_template/xcconfig_template/ViewController/CoreAnimationViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "365">
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "162">
                </Location>
                <Location
-                  uuid = "F0A5869D-E46D-48D4-A323-BD491C0E1A4A - 60a8915686a5619c"
+                  uuid = "F0A5869D-E46D-48D4-A323-BD491C0E1A4A - 9072e46364fc91a9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "AHFramework.CoreAnimationViewController.gestureAction(__C.UIPanGestureRecognizer) -&gt; ()"
                   moduleName = "AHFramework"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/arahakobyan/Library/Mobile%20Documents/com~apple~CloudDocs/%23Projects/%23My/xcconfig_template/xcconfig_template/ViewController/CoreAnimationViewController.swift"
+                  urlString = "file:///Users/arahakobyan/%23All/%23Projects/%23My/xcconfig_template/xcconfig_template/ViewController/CoreAnimationViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "365">
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "162">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F3D3172-0ED0-4E49-B62D-E3818DACA4DE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "xcconfig_template/ViewController/CoreAnimationViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5F3D3172-0ED0-4E49-B62D-E3818DACA4DE - 978fbcacb2ae91c8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "xcconfig.CoreAnimationViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "xcconfig"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arahakobyan/%23All/%23Projects/%23My/xcconfig_template/xcconfig_template/ViewController/CoreAnimationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "44">
+               </Location>
+               <Location
+                  uuid = "5F3D3172-0ED0-4E49-B62D-E3818DACA4DE - 69f8bf5d109c36fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AHFramework.CoreAnimationViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "AHFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/arahakobyan/%23All/%23Projects/%23My/xcconfig_template/xcconfig_template/ViewController/CoreAnimationViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "44">
                </Location>
             </Locations>
          </BreakpointContent>

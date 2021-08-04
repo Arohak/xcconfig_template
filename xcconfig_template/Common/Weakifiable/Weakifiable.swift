@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Weakifiable: class { }
+protocol Weakifiable: AnyObject { }
 
 extension NSObject: Weakifiable {}
 

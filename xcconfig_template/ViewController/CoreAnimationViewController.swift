@@ -38,8 +38,8 @@ class CoreAnimationViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .white
-//        view.addSubview(myView)
-//        view.layer.addSublayer(shapeLayer)
+        view.addSubview(myView)
+        view.layer.addSublayer(shapeLayer)
         
         view.addSubview(activityIndicator)
         view.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(gestureAction)))
@@ -49,8 +49,8 @@ class CoreAnimationViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-//        buildAnimations()
-//        buildShapeLayer()
+        buildAnimations()
+        buildShapeLayer()
         
         shapeLayer.fillColor = UIColor.black.cgColor
         shapeLayer.path = createPath(point: CGPoint(x: view.bounds.maxX / 2, y: view.bounds.minY))

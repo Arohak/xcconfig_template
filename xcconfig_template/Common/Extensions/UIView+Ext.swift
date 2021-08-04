@@ -37,14 +37,3 @@ extension UIView {
         if let width = width { widthAnchor.constraint(equalToConstant: width).isActive = true }
     }
 }
-
-//view.addSubview(oneView)
-//oneView.anchors(top: (anchor: view.topAnchor, constant: 20),
-//                left: (anchor: view.leftAnchor, constant: 20),
-//                right: (anchor: view.rightAnchor, constant: 20),
-//                bottom: (anchor: view.bottomAnchor, constant: 400))
-//
-//view.addSubview(twoView)
-//twoView.anchors(top: .init(anchor: oneView.bottomAnchor, constant: 40),
-//                centerX: .init(anchor: oneView.centerXAnchor),
-//                height: 200, width: 200)

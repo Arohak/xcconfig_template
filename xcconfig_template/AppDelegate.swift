@@ -17,31 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-//        MARK: - ComponentViewController
         vc = ComponentViewController()
-        
-        //MARK: - ObserverViewController
+//        vc = CoreAnimationViewController()
 //        vc = ObserversViewController()
+//        vc = DataSourceViewController()
+//        vc = StyleViewController()
+//        vc = GuardianTableViewController()
+//        vc = StaticTableViewController()
+//        vc = DynamicTableViewController()
         
-        //MARK: - DiffableDataSourceViewController
 //        if #available(iOS 13.0, *) {
 //            vc = DiffableDataSourceViewController()
 //        }
-
-        //MARK: - DataSourceViewController
-//        vc = DataSourceViewController()
-
-//        MARK: - StyleViewController
-//        vc = StyleViewController()
-
-        //MARK: - Guardian TableViewController
-//        vc = GuardianTableViewController()
-
-        //MARK: - Staic Table View Enum
-//        vc = StaticTableViewController()
-
-        //MARK: - Dynamic Table View Generic
-//        vc = DynamicTableViewController()
 
         //MARK: - Eventable
 //        let vc = EventableViewController()
