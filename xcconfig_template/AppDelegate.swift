@@ -17,8 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        //MARK: - CoreAnimationViewController
-        vc = CoreAnimationViewController()
+//        MARK: - ComponentViewController
+        vc = ComponentViewController()
         
         //MARK: - ObserverViewController
 //        vc = ObserversViewController()
@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //MARK: - DataSourceViewController
 //        vc = DataSourceViewController()
 
-        //MARK: - StyleViewController
+//        MARK: - StyleViewController
 //        vc = StyleViewController()
 
         //MARK: - Guardian TableViewController
