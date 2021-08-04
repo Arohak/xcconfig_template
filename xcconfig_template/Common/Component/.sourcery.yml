@@ -1,0 +1,11 @@
+sources:
+    - Previews
+templates:
+    - Templates
+output: 
+    Previews
+    
+#sourcery --sources AutoEquatable.playground/Sources \
+#--output AutoEquatable.playground/Sources \
+#--templates . \
+#--watch

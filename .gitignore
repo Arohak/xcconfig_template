@@ -1,1 +1,5 @@
 xcconfig_template.xcworkspace/xcuserdata/test.xcuserdatad/UserInterfaceState.xcuserstate
+**/.DS_Store
+*.xcuserstate
+*.xcuserdatad
+*.xcuserstate
